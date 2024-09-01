@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="min-h-screen flex justify-center items-center bg-[#0D192C] p-20">
+    <div
+      class="flex flex-col justify-center items-center bg-[#2E405A] rounded-3xl p-10 gap-y-8 max-w-[450px] max-h-[600]"
+    >
+      <div class="relative flex flex-col justify-center items-center">
+        <img
+          src="images/image-equilibrium.jpg"
+          alt=""
+          class="w-full h-full rounded-2xl"
+        />
+        <div
+          class="max-md:hidden group hover:cursor-pointer absolute w-full h-full flex justify-center items-center z-2"
+        >
+          <img
+            src="images/icon-view.svg"
+            alt=""
+            class="invisible group-hover:visible w-12 h-12 z-10"
+          />
+          <div
+            class="invisible group-hover:visible w-full h-full absolute bg-[#00FFF8] opacity-40 z-4 rounded-2xl"
+          ></div>
+        </div>
+      </div>
+
+      <div class="font-['outfit'] flex flex-col items-start gap-y-2">
+        <p
+          class="text-2xl text-white font-semibold hover:text-[#00FFF8] hover:cursor-pointer"
+        >
+          Equilibrium #3429
+        </p>
+        <p class="text-l text-[#8BACD9] font-light">
+          ur Equilibrium collection promotes balance and calm.
+        </p>
+      </div>
+
+      <div class="flex self-start justify-between min-w-full">
+        <div
+          class="flex flex-row text-[#00FFF8] font-semibold text-[15px] gap-x-2"
+        >
+          <img src="images/icon-ethereum.svg" alt="" />
+          <p>O 0.041 ETH</p>
+        </div>
+        <div class="flex flex-row text-[#8BACD9] text-[15px] gap-x-2">
+          <img src="images/icon-clock.svg" alt="" />
+          <p>3 days left</p>
+        </div>
+      </div>
+
+      <hr class="border-0 bg-[#8BACD9] h-0.5 w-full" />
+
+      <div class="flex self-start gap-x-4 items-center w-full">
+        <img
+          src="images/image-avatar.png"
+          alt=""
+          class="w-[33px] h-[33px] border border-white rounded-full"
+        />
+        <p class="text-[#8BACD9] text-[15px]">
+          Creation of
+          <span class="text-white hover:text-[#00FFF8] hover:cursor-pointer"
+            >Jules Wyvern</span
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
